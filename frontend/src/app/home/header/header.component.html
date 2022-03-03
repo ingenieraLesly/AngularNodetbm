@@ -1,17 +1,17 @@
-<!-- <p>header works!</p> -->
-<div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-        <span class="fs-4">Simple header</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a routerLink="" class="nav-link active" aria-current="page">Home</a></li>
-        <li class="nav-item"><a routerLink="listTask" class="nav-link">List Task</a></li>
-        <li class="nav-item"><a routerLink="login" class="nav-link">Login</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      </ul>
-    </header>
-  </div>
+<mat-toolbar class="bgHeader">
+  <ul>
+    <a routerLink="listTask">List task</a>
+  </ul>
+  <ul>
+    <a routerLink="saveTask">Create task</a>
+  </ul>
+  <ul>
+    <a routerLink="listUser">Admin</a>
+  </ul>
+  <span class="headerSpacer"></span>
+  <ul>
+    <a mat-button routerLink="signUp">Sign up</a>
+    <a mat-button routerLink="login">Login</a>
+    <a mat-button>logout</a>
+  </ul>
+</mat-toolbar>

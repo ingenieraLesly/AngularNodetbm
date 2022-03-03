@@ -1,8 +1,30 @@
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">LOGIN</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Login</a>
-    </div>
-  </div>
+<div class="form">
+  <mat-card class="card">
+    <mat-card-title>Login</mat-card-title>
+    <mat-card-content>
+      <div class="container">
+        <mat-form-field>
+          <input
+            [(ngModel)]="loginData.email"
+            matInput
+            type="email"
+            placeholder="Email"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <input
+            [(ngModel)]="loginData.password"
+            matInput
+            type="password"
+            placeholder="Password"
+            required
+          />
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)="login()" class="button" mat-raised-button>Login</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
