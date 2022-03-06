@@ -1,3 +1,3 @@
 # AngularNodetbm
 
-Currently, learning angular. Por primera vez trabajo con Angular.
+Currently, learning about web framework: Angular. Por primera vez trabajo con Angular.
