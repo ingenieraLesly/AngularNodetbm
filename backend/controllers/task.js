@@ -8,7 +8,7 @@ const saveTask = async (req, res) => {
     userId: req.user._id,
     name: req.body.name,
     description: req.body.description,
-    taskStatus: "to-do",
+    taskStatus: "to-do",//¿borrar?
     imageUrl: "",
   });
 

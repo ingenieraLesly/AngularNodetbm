@@ -6,7 +6,7 @@ import {
   MatSnackBarHorizontalPosition,
   MatSnackBarVerticalPosition,
 } from '@angular/material/snack-bar';
-import { HorizontalConnectionPos } from '@angular/cdk/overlay';
+// import { HorizontalConnectionPos } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-register',
@@ -38,10 +38,10 @@ export class RegisterComponent implements OnInit {
       this.openSnackBarError();
     } else {
       this._userService.registerUser(this.registerData).subscribe({
-        next: (v) => {
-          localStorage.setItem('token', v.token);
-          this._router.navigate(['/saveTask']);
-          this.message = 'Suscesfull registration';
+        next: (v) => {//si todo sale bien (do puntos: esto va a llevar.tipo de vble. en este caso dice que esto es una validación con json adentro)
+          localStorage.setItem('token', v.token);//guardeme en el local un token
+          this._router.navigate(['/saveTask']);//y redireccioneme a saveTask
+          this.message = 'Suscesfull registration';//y muestreme un mensaje = asigna un valor
           this.openSnackBarSuccesfull();
         },
         error: (e) => {
