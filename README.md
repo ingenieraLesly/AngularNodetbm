@@ -1,2 +1,3 @@
 # AngularNodetbm
-First Angular. Por primera vez trabajo con Angular.
+
+Currently learning angular. Por primera vez trabajo con Angular.
